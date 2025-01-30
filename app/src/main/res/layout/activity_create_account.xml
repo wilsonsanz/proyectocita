@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/fondo_cre">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Datos Personales"
+            android:textSize="18sp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/etCedula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cédula"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="number" /> <!-- Se ajusta para que sea solo número -->
+
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombres"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="textPersonName" /> <!-- Se ajusta para texto de nombre -->
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellidos"
+            android:textColorHint="@color/black"
+            android:inputType="textPersonName" /> <!-- Se ajusta para texto de apellido -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo de cuenta"
+            android:paddingTop="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/tipodecuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paciente"
+                android:textColor="@color/black"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Administrador" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etCellphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Celular"
+            android:textColorHint="@color/black"
+            android:inputType="phone" /> <!-- Se ajusta para número de teléfono -->
+
+        <EditText
+            android:id="@+id/etDisabilityType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tipo de discapacidad"
+            android:textColorHint="@color/black"/>
+
+        <Spinner
+            android:id="@+id/spBloodType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/blood_types" />
+
+        <EditText
+            android:id="@+id/etAllergies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alergias"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:id="@+id/etIllnesses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enfermedades"
+            android:textColorHint="@color/black"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
