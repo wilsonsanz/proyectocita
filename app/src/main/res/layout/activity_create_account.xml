@@ -42,6 +42,7 @@
             android:layout_height="wrap_content"
             android:hint="Apellidos"
             android:textColorHint="@color/black"
+            android:textColor="@color/black"
             android:inputType="textPersonName" /> <!-- Se ajusta para texto de apellido -->
 
         <TextView
@@ -64,7 +65,8 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Administrador" />
+                android:text="Administrador"
+                android:textColor="@color/black"/>
         </RadioGroup>
 
         <EditText
@@ -73,6 +75,7 @@
             android:layout_height="wrap_content"
             android:hint="Celular"
             android:textColorHint="@color/black"
+            android:textColor="@color/black"
             android:inputType="phone" /> <!-- Se ajusta para número de teléfono -->
 
         <EditText
@@ -80,27 +83,40 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Tipo de discapacidad"
-            android:textColorHint="@color/black"/>
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo de Sangre"
+            android:textSize="18sp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/black"/>
 
         <Spinner
             android:id="@+id/spBloodType"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:entries="@array/blood_types" />
+            android:backgroundTint="@color/black"
+            android:entries="@array/blood_types"
+            android:textColor="@color/black"/>
 
         <EditText
             android:id="@+id/etAllergies"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Alergias"
-            android:textColorHint="@color/black"/>
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"/>
 
         <EditText
             android:id="@+id/etIllnesses"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enfermedades"
-            android:textColorHint="@color/black"/>
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"/>
 
         <Button
             android:id="@+id/btnSave"
